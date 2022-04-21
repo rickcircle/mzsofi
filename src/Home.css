@@ -1,0 +1,166 @@
+
+.home__bg{
+    background-position: 80%;
+    background-repeat: no-repeat;
+}
+
+.home__bg::after{
+    content: "";
+    background: url('c:/dev/project/spa-page/spapp/src/images/zsofi2.jpg');
+    opacity: 0.5;
+    background-size: cover;
+    background-color: #202020;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+}
+li.nav__items{
+    font-size: 18px;
+    padding-bottom: 15px;
+    transition: 0.4s ease-in-out;
+}
+.home__content{
+    padding: 125px 0px;
+}
+h1.home__text{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, .75) !important;
+}
+h2.home__text{
+    font-size: 38px;
+    line-height: 54px;
+    font-weight: 800;
+    font-family: Montserrat, sans-serif;
+}
+h3.home__text{
+    font-size: 38px;
+    line-height: 54px;
+    font-weight: 800;
+    font-family: Montserrat, sans-serif;
+}
+h4.home__text{
+    font-size: 38px;
+    line-height: 54px;
+    font-weight: 400;
+    font-family: Montserrat, sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .subnav .subnavbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: #F9004D;
+  }
+  
+  .subnav-content {
+    display: none;
+    position: absolute;
+    background-color: #F9004D;
+    z-index: 1;
+  }
+  
+  .subnav-content a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+  .header{
+    transition: .4s all ease;
+  }
+  .header.active{
+    position: fixed;
+    z-index: 1000;
+    padding: 0px 30px;
+    background-color: #191919;
+    width: 100%;
+  }
+  .logo__img{
+    width: 40px;
+    height: 40px;
+  }
+
+@media only screen and (min-width: 1025px){
+  ul.sidebar.d__flex{
+    display: none;
+  }
+  .toggle__menu{
+    display: none;
+  }
+}
+  @media only screen and (max-width: 1024px){
+    .header{
+      justify-content: space-between;
+    }
+    .toggle__menu{
+      display: flex;
+      justify-content: flex-end;
+      float: right;
+      z-index: 1000;
+      width: 100%;
+    }
+    h2.white.pz__10{
+      font-size: 28px !important;
+    }
+    .navigation{
+      display: none;
+    }
+    svg.bi.bi-justify.white.pointer{
+      width: 30px;
+      height: 30px;
+    }
+    ul.sidebar.d__flex{
+      flex-wrap: wrap;
+      height: 100%;
+      position: fixed;
+      right: 0%;
+      background: #010101;
+      width: 300px;
+      justify-content: center;
+      top: 0%;
+      flex-direction: column;
+    }
+    li.sideNavbar{
+      padding: 25px 30px;
+    }
+}

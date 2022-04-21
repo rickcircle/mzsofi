@@ -1,0 +1,78 @@
+h1.heading{
+    font-size: 38px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+p.heading.p__color{
+    margin-bottom: 0;
+    text-align: center;
+    line-height: 1.2;
+}
+.service__box{
+    border-radius: 10px;
+    width: 100%;
+    background-color: #191919;
+    padding: 50px;
+    transition: .4s ease;
+}
+h1.service__text{
+    font-weight: 800;
+}
+.service__box .icon svg{ 
+    width: 35px;
+    height: 35px;
+    margin-bottom: 20px;
+}
+p.service__text.p__color{
+    margin-bottom: 0px;
+}
+.service__box:hover{ 
+    transform: translateY(5px);
+    background-image: linear-gradient(90deg, #96013a, #96013a);
+}
+.service__box:hover .icon{
+    color: #fff;
+}
+.service__box:hover p.service__text.p__color{
+    color: #fff !important;
+}
+a.service__btn{
+    padding: 12px 35px;
+    border: solid 2px #efefef;
+    border-radius: 5px;
+    transition: .4s ease;
+    top: 20px;
+    position: relative;
+}
+a.service__btn:hover{
+    background-color: #F9004D;
+    border: solid 2px #F9004D;
+}
+button.btn{
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #F9004D;
+    border: solid 2px #F9004D;
+    color: #fff !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .4s ease;
+}
+button.view__more:hover{
+    background-color: #fff;
+    border: 2px solid #efefef;
+    color: #F9004D !important;
+}
+@media only screen and (max-width: 1024px){
+    .service__box{
+        padding: 32px;
+    }
+    h5.service__text{
+        font-weight: 400;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+}
